@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,300;1,400;1,500&display=swap');
+@font-face {
+  font-family: "IRANSansWeb";
+  src: url("../webfonts/IRANSansWeb_Medium.eot"); /* IE */
+  src: url("../webfonts/IRANSansWeb_Medium.eot?#iefix") format("embedded-opentype"), /* IE */
+  url("../webfonts/IRANSansWeb_Medium.woff") format("woff"), /* Modern Browsers */
+  url("../webfonts/IRANSansWeb_Medium.ttf") format("truetype"); /* Safari, Android, iOS */
+  font-weight: normal;
+}
+
+* {
+  --sb-track-color: #cccccc;
+  --sb-thumb-color: #42a5f5;
+  --sb-size: 14px;
+}
+
+*::-webkit-scrollbar {
+  width: var(--sb-size);
+}
+
+*::-webkit-scrollbar-track {
+  background: var(--sb-track-color);
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--sb-thumb-color);
+  border-radius: 3px;
+}
+
+@supports not selector(::-webkit-scrollbar) {
+  * {
+      scrollbar-color: var(--sb-thumb-color)
+                     var(--sb-track-color);
+  }
+
+
+}
+:root{
+  --pink:#0277BD;
+  --violet:#42A5F5;
+}
+
+
+*{
+  font-family: "IRANSansWeb";
+  text-transform: capitalize;
+  text-decoration: none;
+  outline: none;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+  direction: rtl;
+
+}
+
+*::selection{
+  background:var(--pink);
+  color:#fff;
+}
+
+html{
+  font-size: 62.5%;
+  overflow-x: hidden;
+}
+
+
+
+
+
+.heading{
+  font-size: 4rem;
+  color:var(--pink);
+  text-align: center;
+  padding:0 1rem;
+  padding-top: 6rem;
+  letter-spacing: .2rem;
+  font-weight: 500;
+  padding: 6px;
+}
+.title{
+  padding:0 1rem;
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 600;
+  color:#4d4d4d;
+}
+.text{
+    font-size: 12px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 4px;
+    color: #6b6b6b;
+    margin-bottom: 40px;
+}
+            
+.img{
+  width: 70%;
+  border-radius: 24PX;
+  box-shadow: #a0a0a0 4px 3px;
+}
+
+
+
+
